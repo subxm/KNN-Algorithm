@@ -21,28 +21,55 @@ st.markdown(
     """
     <style>
     .stApp {
-        background: radial-gradient(circle at 15% 20%, #f8f2e8 0%, #fff8ef 35%, #f0f5ff 100%);
+        background: radial-gradient(circle at 20% 0%, #18253d 0%, #101726 42%, #090e18 100%);
+        color: #e8edf7;
+    }
+    .main .block-container {
+        padding-top: 2rem;
+    }
+    h1, h2, h3, h4, h5, h6, p, label, span, div {
+        color: #e8edf7;
+    }
+    [data-testid="stMetricLabel"],
+    [data-testid="stMetricValue"],
+    [data-testid="stMetricDelta"] {
+        color: #f4f7ff;
+    }
+    [data-testid="stDataFrame"],
+    [data-testid="stDataEditor"] {
+        border: 1px solid rgba(196, 214, 255, 0.14);
+        border-radius: 12px;
+        background: rgba(12, 20, 34, 0.72);
+    }
+    section[data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #111827 0%, #0b1020 100%);
+        border-right: 1px solid rgba(196, 214, 255, 0.12);
     }
     .hero {
         padding: 1rem 1.2rem;
         border-radius: 16px;
-        background: linear-gradient(120deg, rgba(16, 24, 40, 0.95) 0%, rgba(43, 59, 90, 0.9) 50%, rgba(23, 30, 48, 0.95) 100%);
-        color: #f7f5ef;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        box-shadow: 0 20px 45px rgba(16, 24, 40, 0.18);
+        background: linear-gradient(120deg, rgba(20, 30, 52, 0.98) 0%, rgba(50, 70, 105, 0.92) 50%, rgba(22, 31, 50, 0.98) 100%);
+        color: #f7f9ff;
+        border: 1px solid rgba(196, 214, 255, 0.18);
+        box-shadow: 0 20px 45px rgba(6, 10, 20, 0.35);
     }
     .hero h1 {
         margin-bottom: 0.2rem;
         letter-spacing: 0.5px;
+        color: #f9fbff;
     }
     .hero p {
         margin-top: 0.15rem;
-        opacity: 0.9;
+        color: #d9e2f5;
+        opacity: 0.95;
     }
     </style>
     """,
     unsafe_allow_html=True,
 )
+
+sns.set_theme(style="darkgrid")
+plt.style.use("dark_background")
 
 st.markdown(
     """
